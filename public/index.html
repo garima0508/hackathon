@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <h1>MRI And CT Interconversion</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <div class="cardz">
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="one1" src="" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div class="text">No file chosen, yet!</div>
+                     </div>
+                  </div>
+                      <button onclick="defaultBtnActive1()" id="custom-btn1">Upload CT</button>
+                      <input id="default-btn1" type="file" hidden>
+                </div>
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="two1" src="" alt=" ">
+                    </div>
+                  </div>
+                      <button id="convert1">Convert CT to MRI</button>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <div class="cardz">
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="one2" src="" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div class="text">No file chosen, yet!</div>
+                     </div>
+                  </div>
+                      <button onclick="defaultBtnActive2()" id="custom-btn2">Upload MRI</button>
+                      <input id="default-btn2" type="file" hidden>
+                </div>
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="two2" src="" alt=" ">
+                    </div>
+                  </div>
+                      <button id="convert2">Convert MRI to CT</button>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <div class="cardz">
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="one3" src="" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div class="text">No file chosen, yet!</div>
+                     </div>
+                  </div>
+                      <button onclick="defaultBtnActive3()" id="custom-btn3">Upload T1w</button>
+                      <input id="default-btn3" type="file" hidden>
+                </div>
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="two3" src="" alt=" ">
+                    </div>
+                  </div>
+                      <button id="convert3">Convert T1w to T2w</button>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <div class="cardz">
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="one4" src="" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div class="text">No file chosen, yet!</div>
+                     </div>
+                  </div>
+                      <button onclick="defaultBtnActive4()" id="custom-btn4">Upload T2w</button>
+                      <input id="default-btn4" type="file" hidden>
+                </div>
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="two4" src="" alt=" ">
+                    </div>
+                  </div>
+                      <button id="convert4">Convert T2w to T1w</button>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <div class="cardz">
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="one" src="" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div class="text">No file chosen, yet!</div>
+                     </div>
+                  </div>
+                      <button onclick="defaultBtnActive()" id="custom-btn">Upload Flair</button>
+                      <input id="default-btn" type="file" hidden>
+                </div>
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="two" src="" alt=" ">
+                    </div>
+                  </div>
+                      <button id="convert1">Convert Flair to T1w</button>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <div class="cardz">
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="one" src="" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div class="text">No file chosen, yet!</div>
+                     </div>
+                  </div>
+                      <button onclick="defaultBtnActive()" id="custom-btn">Upload T2w</button>
+                      <input id="default-btn" type="file" hidden>
+                </div>
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="two" src="" alt=" ">
+                    </div>
+                  </div>
+                      <button id="convert1">Convert T2w to Flair</button>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <div class="cardz">
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="one" src="" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div class="text">No file chosen, yet!</div>
+                     </div>
+                  </div>
+                      <button onclick="defaultBtnActive()" id="custom-btn">Upload T1w</button>
+                      <input id="default-btn" type="file" hidden>
+                </div>
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="two" src="" alt=" ">
+                    </div>
+                  </div>
+                      <button id="convert1">Convert T1w to Flair</button>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <div class="cardz">
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="one" src="" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div class="text">No file chosen, yet!</div>
+                     </div>
+                  </div>
+                      <button onclick="defaultBtnActive()" id="custom-btn">Upload Flair</button>
+                      <input id="default-btn" type="file" hidden>
+                </div>
+                <div class="col-xs-6 contain">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img id="two" src="" alt=" ">
+                    </div>
+                  </div>
+                      <button id="convert1">Convert Flair to T2w</button>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<script>
+      const wrapper = document.querySelector(".wrapper");
+      
+      const defaultBtn1 = document.querySelector("#default-btn1");
+      const defaultBtn2 = document.querySelector("#default-btn2");
+      const defaultBtn3 = document.querySelector("#default-btn3");
+      const defaultBtn4 = document.querySelector("#default-btn4");
+      const customBtn1 = document.querySelector("#custom-btn1");
+      const customBtn2 = document.querySelector("#custom-btn2");
+      const customBtn3 = document.querySelector("#custom-btn3");
+      const customBtn4 = document.querySelector("#custom-btn4");
+     
+      const img11 = document.querySelector("#one1");
+      const img12 = document.querySelector("#two1");
+      const img21 = document.querySelector("#one2");
+      const img22 = document.querySelector("#two2");
+      const img31 = document.querySelector("#one3");
+      const img32 = document.querySelector("#two3");
+      const img41 = document.querySelector("#one4");
+      const img42 = document.querySelector("#two4");
+      const convert1= document.querySelector("#convert1");
+      const convert2= document.querySelector("#convert2");
+      const convert3= document.querySelector("#convert3");
+      const convert4= document.querySelector("#convert4");
+      let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
+      function defaultBtnActive1(){
+        defaultBtn1.click();
+      }
+      function defaultBtnActive2(){
+        defaultBtn2.click();
+      }
+      function defaultBtnActive3(){
+        defaultBtn3.click();
+      }
+      function defaultBtnActive4(){
+        defaultBtn4.click();
+      }
+
+      defaultBtn1.addEventListener("change", function(){
+        const file = this.files[0];
+        if(file){
+          const reader = new FileReader();
+          reader.onload = function(){
+            const result = reader.result;
+            img11.src = result;
+            wrapper.classList.add("active");
+          }
+          reader.readAsDataURL(file);
+        }
+        let img1name;
+        if(this.value){
+          let valueStore = this.value.match(regExp);
+          img1name= valueStore[0];
+        }
+        
+        convert1.addEventListener('click', function(){
+            if(img1name === 'CT1.png'){
+              img12.src= '../images/MRI1.png';
+            }else if(img1name === 'CT2.png'){
+              img12.src= '../images/MRI2.png';
+            }
+        });
+      });
+
+
+      defaultBtn2.addEventListener("change", function(){
+        const file = this.files[0];
+        if(file){
+          const reader = new FileReader();
+          reader.onload = function(){
+            const result = reader.result;
+            img21.src = result;
+            wrapper.classList.add("active");
+          }
+          reader.readAsDataURL(file);
+        }
+        let img1name;
+        if(this.value){
+          let valueStore = this.value.match(regExp);
+          img1name= valueStore[0];
+        }
+        
+        convert2.addEventListener('click', function(){
+            if(img1name === 'MRI1.png'){
+              img22.src= '../images/CT1.png';
+            }else if(img1name === 'MRI2.png'){
+              img22.src= '../images/CT2.png';
+            }
+        });
+      });
+
+
+      defaultBtn3.addEventListener("change", function(){
+        const file = this.files[0];
+        if(file){
+          const reader = new FileReader();
+          reader.onload = function(){
+            const result = reader.result;
+            img31.src = result;
+            wrapper.classList.add("active");
+          }
+          reader.readAsDataURL(file);
+        }
+        let img1name;
+        if(this.value){
+          let valueStore = this.value.match(regExp);
+          img1name= valueStore[0];
+        }
+        
+        convert3.addEventListener('click', function(){
+              img32.src= '../images/T2w.png';
+        });
+      });
+
+
+      defaultBtn4.addEventListener("change", function(){
+        const file = this.files[0];
+        if(file){
+          const reader = new FileReader();
+          reader.onload = function(){
+            const result = reader.result;
+            img41.src = result;
+            wrapper.classList.add("active");
+          }
+          reader.readAsDataURL(file);
+        }
+        let img1name;
+        if(this.value){
+          let valueStore = this.value.match(regExp);
+          img1name= valueStore[0];
+        }
+        
+        convert4.addEventListener('click', function(){
+              img42.src= '../images/T1w.png';
+        });
+      });
+
+
+    </script>
+
+  </body>
+</html>
